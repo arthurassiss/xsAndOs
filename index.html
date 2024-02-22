@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Jogo da Velha</title>
+	</head>
+	<body>
+		<div class="main">
+			<header class="header">
+				<h1 class="logo">Jogo da Velha <span>#</span></h1>
+				<h2 onclick="restart()" class="restart">Reiniciar</h2>
+			</header>
+			<div id="containerEnter" class="containerEnter">
+				<h2 class="enterTitle">Escolha o seu time!</h2>
+				<div class="containerButtons">
+					<button id="btn1" onclick="openGame()" class="button btn1">
+						X
+					</button>
+					<button id="btn2" onclick="openGame()" class="button btn2">
+						O
+					</button>
+				</div>
+			</div>
+
+			<div id="containerGame" class="containerGame">
+				<div id="game" class="game">
+					<div class="row1">
+						<div id="square" class="square square1"></div>
+						<div id="square" class="square square2"></div>
+						<div id="square" class="square square3"></div>
+					</div>
+					<div class="row2">
+						<div id="square" class="square square4"></div>
+						<div id="square" class="square square5"></div>
+						<div id="square" class="square square6"></div>
+					</div>
+					<div class="row3">
+						<div id="square" class="square square7"></div>
+						<div id="square" class="square square8"></div>
+						<div id="square" class="square square9"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
